@@ -23,6 +23,7 @@ export class DistanciaComponent implements OnInit {
     this.suDireccion = new google.maps.LatLng(20.72439085893023, -101.35670346843939);
     this.CalcularDireccion();
     this.addMarker();
+
   }
   ngOnInit() {
 
@@ -48,8 +49,6 @@ export class DistanciaComponent implements OnInit {
     this.markers.push({ icon: icons["yo"].icon, position: this.miDireccion, options: { draggable: false } })
     this.markers.push({ icon: icons["ella"].icon, position: this.suDireccion, options: { draggable: false } })
   }
-
-
 
 
 }
