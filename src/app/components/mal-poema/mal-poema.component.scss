@@ -1,20 +1,8 @@
 @import '../../../assets/styles/variables.scss';
 
-h1 {
-    color: black;
-}
-
-.body {
-    padding: 1rem;
-}
-
-.container {}
-
 .container {
     background-image: url("../../../assets/imgs/paisaje2.jpg");
-    background-color: rgba($color: $orange, $alpha: 0.5);
-    min-width: 100vw;
-    min-height: 100vh;
+    background-color: rgba($color: $green, $alpha: 0.8);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -28,13 +16,15 @@ h1 {
     }
 }
 
-.mensaje {
-    text-align: justify;
-    text-justify: inter-word;
-    padding-right: 8rem;
+.black {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-.travel {
-    height: 15rem;
-}
+div.firma {
+    padding-right: 20rem;
+    font-size: 1.5rem;
+    font-style: oblique;
 
+    p.firma {}
+}

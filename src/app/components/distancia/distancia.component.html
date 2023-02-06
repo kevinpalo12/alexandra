@@ -3,14 +3,27 @@
         <div class="col-12 text-center mb-5">
             <h1> Segun Google Maps
             </h1>
+            <hr>
         </div>
-        <div class="col-6"> <google-map width="750px" height="450px" [center]="center" [zoom]="zoom">
+        <div class="col-6"> <google-map width="47rem" height="29rem" [center]="center" [zoom]="zoom">
                 <map-marker *ngFor="let marker of markers" [position]="marker.position" [options]="marker.options"
                     [icon]="marker.icon"></map-marker>
             </google-map>
         </div>
         <div class="col-6">
-            <h2><b>Actualmente nos separan:</b> {{distanceinMetro}} kms</h2>
+            <h2 class="mb-5"><b>Actualmente nos separan:</b> {{distanceinMetro}} kms</h2>
+            <h2 class="mb-5"><b>Debo tomar minimo:</b> 5 medios de transporte</h2>
+            <h2 class="mb-5"><b>Viajar por lo menos:</b> 9 Horas</h2>
+            <h3 class="mensaje">Puede parecer muchas cosas pero cuando dos corazones laten en sintonia estos no miden distancia ni
+                tiempo, solo buscan encontrarse</h3>
+                <div class="d-flex justify-content-center travel">
+                    <img src="../../../assets/imgs/world.png" alt="world">
+                </div>
         </div>
+    </div>
+    <hr>
+    <div class="col-12 d-flex justify-content-center pb-5">
+   
+        <button class="btn btn-success atras" (click)=" navegacion()"> Atras</button>
     </div>
 </div>

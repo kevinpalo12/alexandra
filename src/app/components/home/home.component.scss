@@ -1,0 +1,53 @@
+@import '../../../assets/styles/variables.scss';
+
+button.grandes {
+    font-family: Arial;
+    font-size: 3rem;
+    margin: 2vw;
+}
+
+.container {
+    background-image: url("../../../assets/imgs/paisaje2.jpg");
+    background-color: rgba($color: $pink, $alpha: 0.99);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    min-width: 100vw;
+    min-height: 100vh;
+    color: black;
+
+
+}
+
+.malo {
+    background-color: $green;
+    color: #000;
+    border: none;
+}
+
+.siempre {
+    background-color: $blue;
+    color: #000;
+    border: none;
+}
+
+.distancia {
+    background-color: $orange;
+    color: #000;
+    border: none;
+}
+
+.recuerdo {
+    background-color: $red;
+    color: #000;
+    border: none;
+}
+
+.titulo{
+    h1{
+        font-weight: bold;
+        color: whitesmoke;
+    }
+
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-distancia',
@@ -16,7 +17,7 @@ export class DistanciaComponent implements OnInit {
   markers: { icon: string, position: google.maps.LatLngLiteral, options: google.maps.MarkerOptions }[] = [];
 
 
-  constructor() {
+  constructor(private router: Router) {
     this.center = { lat: 16.9725144, lng: -87.1523536 };
     this.zoom = 3.5;
     this.miDireccion = new google.maps.LatLng(6.2344669, -75.5981709);
@@ -50,5 +51,11 @@ export class DistanciaComponent implements OnInit {
     this.markers.push({ icon: icons["ella"].icon, position: this.suDireccion, options: { draggable: false } })
   }
 
+
+
+  navegacion() {
+    this.router.navigate(['/' ]);
+
+  }
 
 }

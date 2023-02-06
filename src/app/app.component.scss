@@ -1,1 +1,23 @@
 @import '../assets/styles/variables.scss';
+
+.fondo {
+    color: white;
+
+  height: 100vh;
+    @media (max-width: 600px) {
+      background-image: url("../assets/imgs/paisaje2.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-blend-mode: soft-light;
+    }
+  
+    @media (max-width: 2000px) {
+      background-image: url("../assets/imgs/paisaje2.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-blend-mode: soft-light;
+      background-position: center;
+    }
+  }

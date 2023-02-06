@@ -7,12 +7,18 @@ import { AppComponent } from './app.component';
 import { DistanciaComponent } from './components/distancia/distancia.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
+import { MalPoemaComponent } from './components/mal-poema/mal-poema.component';
+import { SiempreComponent } from './components/siempre/siempre.component';
+import { RecuerdoComponent } from './components/recuerdo/recuerdo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DistanciaComponent,
-    HomeComponent
+    HomeComponent,
+    MalPoemaComponent,
+    SiempreComponent,
+    RecuerdoComponent,
   ],
   imports: [
     BrowserModule,
